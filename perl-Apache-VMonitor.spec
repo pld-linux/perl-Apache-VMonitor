@@ -2,10 +2,10 @@
 %define	pdir	Apache
 %define	pnam	VMonitor
 Summary:	Apache::VMonitor - Visual System and Apache Server Monitor
-Summary(pl):	Apache::VMonitor - Wizualny monitor serwera Apache i systemu
+Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	0.8
-Release:	1
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
