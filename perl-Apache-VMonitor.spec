@@ -37,7 +37,8 @@ przez interfejs WWW.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
+	INSTALLDIRS=vendor \
+	MOD_PERL=2
 %{__make}
 
 %install
