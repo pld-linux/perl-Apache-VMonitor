@@ -8,7 +8,7 @@ Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	2.0
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
