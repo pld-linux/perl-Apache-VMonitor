@@ -3,8 +3,8 @@
 %bcond_with 	tests		# perform "make test" (require to start apache)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	VMonitor
+%define		pdir	Apache
+%define		pnam	VMonitor
 Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
@@ -40,7 +40,7 @@ sections can be shown/hidden dynamically through the web interface.
 Ten modu³ emuluje funkcjolano¶æ raportowania oferowan± przez top(1),
 rozszerzon± dla procesów mod_perla, oraz narzêdzi mount(1) i df(1).
 Ma opcje wizualnego ostrzegania i konfigurowalny tryb automatycznego
-od¶wie¿ania.  Wszystkie sekcje mog± byæ ukrywane/pokazywane dynamicznie
+od¶wie¿ania. Wszystkie sekcje mog± byæ ukrywane/pokazywane dynamicznie
 przez interfejs WWW.
 
 %prep
