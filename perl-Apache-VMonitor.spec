@@ -5,13 +5,13 @@ Summary:	Apache::VMonitor - Visual System and Apache Server Monitor
 Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	0.8
-Release:	3
+Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	88cfba14794b50cb0642931cd19d42da
-BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	apache-mod_perl >= 1.15
 Requires:	perl-Apache-Scoreboard >= 0.08
 Requires:	perl-GTop >= 0.09
@@ -36,18 +36,20 @@ przez interfejs WWW.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/%{pdir}/*.pm
+%{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
