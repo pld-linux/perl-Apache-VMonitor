@@ -1,3 +1,6 @@
+# Conditional build:
+%bcond_with	apache1	# build with apache1
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Apache
 %define	pnam	VMonitor
@@ -38,7 +41,7 @@ przez interfejs WWW.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor \
-	MOD_PERL=2
+	MOD_PERL=%{?with_apache1:1}%{!?with_apache1:2}
 %{__make}
 
 %install
