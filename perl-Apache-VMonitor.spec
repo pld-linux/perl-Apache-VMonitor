@@ -1,6 +1,6 @@
 # Conditional build:
 %bcond_with	apache1		# build with apache1
-%bcond_without 	tests		# do not perform "make test"
+%bcond_with 	tests		# perform "make test" (require to start apache)
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Apache
@@ -9,7 +9,7 @@ Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	2.0
-Release:	6
+Release:	7
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -26,6 +26,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	apache-mod_perl >= 1.15
 Requires:	perl-Apache-Scoreboard >= 0.08
 Requires:	perl-GTop >= 0.09
+Requires:	perl-Template-Toolkit
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
