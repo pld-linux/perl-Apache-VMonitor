@@ -1,6 +1,6 @@
 # Conditional build:
 %bcond_with	apache1		# build with apache1
-%bcond_with 	tests		# perform "make test" (require to start apache)
+%bcond_with	tests		# perform "make test" (require to start apache)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Apache
