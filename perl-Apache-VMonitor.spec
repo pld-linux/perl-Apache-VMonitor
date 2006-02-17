@@ -8,7 +8,7 @@
 Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
-Version:	2.01
+Version:	2.05
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
@@ -16,13 +16,14 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	431e474afc1b212ad1fdc34bed0a22dd
 Source1:	%{name}.conf
-BuildRequires:	apache-mod_perl >= 1.15
+BuildRequires:	apache-mod_perl-devel >= 1.15
 %if %{with tests}
 BuildRequires:	perl-Apache-Scoreboard
 BuildRequires:	perl-Template-Toolkit
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildConflicts:	apache1-mod_perl
 Requires:	apache-mod_perl >= 1.15
 Requires:	perl-Apache-Scoreboard >= 0.08
 Requires:	perl-GTop >= 0.09
@@ -38,8 +39,8 @@ sections can be shown/hidden dynamically through the web interface.
 
 %description -l pl
 Ten modu³ emuluje funkcjolano¶æ raportowania oferowan± przez top(1),
-rozszerzon± dla procesów mod_perla, oraz narzêdzi mount(1) i df(1).
-Ma opcje wizualnego ostrzegania i konfigurowalny tryb automatycznego
+rozszerzon± dla procesów mod_perla, oraz narzêdzi mount(1) i df(1). Ma
+opcje wizualnego ostrzegania i konfigurowalny tryb automatycznego
 od¶wie¿ania. Wszystkie sekcje mog± byæ ukrywane/pokazywane dynamicznie
 przez interfejs WWW.
 
