@@ -14,7 +14,7 @@ Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	431e474afc1b212ad1fdc34bed0a22dd
+# Source0-md5:	52f5644efaa6019f6eca155c91afc605
 Source1:	%{name}.conf
 BuildRequires:	apache-mod_perl-devel >= 1.15
 %if %{with tests}
