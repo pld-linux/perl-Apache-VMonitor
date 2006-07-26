@@ -1,3 +1,5 @@
+# TODO
+# - webapps?
 # Conditional build:
 %bcond_with	apache1		# build with apache1
 %bcond_with	tests		# perform "make test" (require to start apache)
@@ -61,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -D %{SOURCE1} $RPM_BUILD_ROOT/%{_sysconfdir}/httpd/httpd.conf/80_Apache_VMonitor.conf
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/httpd/httpd.conf/80_Apache_VMonitor.conf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
