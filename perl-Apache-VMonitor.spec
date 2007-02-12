@@ -8,7 +8,7 @@
 %define		pdir	Apache
 %define		pnam	VMonitor
 Summary:	Apache::VMonitor - visual system and Apache server monitor
-Summary(pl):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
+Summary(pl.UTF-8):   Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	2.05
 Release:	1
@@ -39,11 +39,11 @@ for mod_perl processes, mount(1), and df(1) utilities. It has a visual
 alerting capabilities and configurable automatic refresh mode. All the
 sections can be shown/hidden dynamically through the web interface.
 
-%description -l pl
-Ten modu³ emuluje funkcjolano¶æ raportowania oferowan± przez top(1),
-rozszerzon± dla procesów mod_perla, oraz narzêdzi mount(1) i df(1). Ma
+%description -l pl.UTF-8
+Ten moduÅ‚ emuluje funkcjolanoÅ›Ä‡ raportowania oferowanÄ… przez top(1),
+rozszerzonÄ… dla procesÃ³w mod_perla, oraz narzÄ™dzi mount(1) i df(1). Ma
 opcje wizualnego ostrzegania i konfigurowalny tryb automatycznego
-od¶wie¿ania. Wszystkie sekcje mog± byæ ukrywane/pokazywane dynamicznie
+odÅ›wieÅ¼ania. Wszystkie sekcje mogÄ… byÄ‡ ukrywane/pokazywane dynamicznie
 przez interfejs WWW.
 
 %prep
