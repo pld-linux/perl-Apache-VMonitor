@@ -8,7 +8,7 @@
 %define		pdir	Apache
 %define		pnam	VMonitor
 Summary:	Apache::VMonitor - visual system and Apache server monitor
-Summary(pl.UTF-8):   Apache::VMonitor - wizualny monitor serwera Apache i systemu
+Summary(pl.UTF-8):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
 Version:	2.05
 Release:	1
