@@ -10,13 +10,13 @@
 Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl.UTF-8):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
-Version:	2.05
+Version:	2.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	52f5644efaa6019f6eca155c91afc605
+# Source0-md5:	39e86632f5007022c91de169a301576e
 Source1:	%{name}.conf
 BuildRequires:	apache-mod_perl-devel >= 1.15
 %if %{with tests}
