@@ -3,10 +3,10 @@
 # Conditional build:
 %bcond_with	apache1		# build with apache1
 %bcond_with	tests		# perform "make test" (require to start apache)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Apache
 %define		pnam	VMonitor
+%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl.UTF-8):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
@@ -18,14 +18,15 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	39e86632f5007022c91de169a301576e
 Source1:	%{name}.conf
+URL:		http://search.cpan.org/dist/Apache-VMonitor/
 BuildRequires:	apache-mod_perl-devel >= 1.15
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+BuildConflicts:	apache1-mod_perl
 %if %{with tests}
 BuildRequires:	perl-Apache-Scoreboard
 BuildRequires:	perl-Template-Toolkit
 %endif
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildConflicts:	apache1-mod_perl
 Requires:	apache-mod_perl >= 1.15
 Requires:	perl-Apache-Scoreboard >= 0.08
 Requires:	perl-GTop >= 0.09
