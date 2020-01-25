@@ -6,7 +6,6 @@
 
 %define		pdir	Apache
 %define		pnam	VMonitor
-%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::VMonitor - visual system and Apache server monitor
 Summary(pl.UTF-8):	Apache::VMonitor - wizualny monitor serwera Apache i systemu
 Name:		perl-Apache-VMonitor
